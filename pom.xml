@@ -55,7 +55,11 @@
 				<configuration>
 					<to>
 						<image>docker.io/abhi3290/${project.artifactId}:${project.version}</image>
-						<credHelper>docker-credential-osxkeychain</credHelper>
+						<!--<credHelper>docker-credential-osxkeychain</credHelper>-->
+						<auth>
+							<username>${env.REGISTRY_USERNAME}</username>
+							<password>${env.REGISTRY_PASSWORD}</password>
+						</auth>
 					</to>
 				</configuration>
 			</plugin>
