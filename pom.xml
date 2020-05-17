@@ -55,6 +55,7 @@
 				<configuration>
 					<to>
 						<image>docker.io/abhi3290/${project.artifactId}:${project.version}</image>
+						<credHelper>docker-credential-osxkeychain</credHelper>
 					</to>
 				</configuration>
 			</plugin>
